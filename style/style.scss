@@ -1,0 +1,304 @@
+@import 'variables';
+@import 'global';
+
+// XXXXXXXXXXXXXXXXXXXXXXX HEADER STARTS XXXXXXXXXXXXXXXXXXXXXXX
+header{
+    padding: 40px $padding-desktop 150px $padding-desktop;
+    background: url(../images/bg-pattern-intro-desktop.svg)  no-repeat -250px -1075px ,$intro ;
+    background-size:200% , auto;        
+    border-radius: 0 0 0 100px ;
+    // XXXXXXXXXXXXXXXXXXXXXXX NAV STARTS XXXXXXXXXXXXXXXXXXXXXXX
+    nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+
+            .logo{
+                margin-right: 30px;
+                width:80px;
+            }
+            .nav-link{
+                position: relative;
+                margin: 10px 20px;
+                &:hover .head{
+                    text-decoration: underline;
+                    color: white;
+                    transition: all 100ms ease-in-out;
+                    img{transform: rotate(180deg);}
+                }
+                &:hover .dropdown{
+                    display: block;
+                }
+                .head{
+                    font-family: $overpass;
+                    padding: 15px 0;
+                    font-size: .9em;
+                    color: rgb(255,218,215);
+                    cursor: pointer;
+                    img{
+                        transition: all 200ms ease-in-out;
+
+                    }
+                }
+            }
+            .info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .register{
+                .log-in{
+                    border-color: transparent;
+                    color:rgb(255,218,215) ;
+                    font-weight: 500;
+                }
+                .sign-up{
+                    background: white;
+                    color: $CTA-text;
+                    transition: all 200ms ease-in-out;
+                    &:hover{
+                        background: rgba(255, 255, 255, 0.219);
+                        color: white;
+                        border-color: transparent;
+                    }
+                }
+            }
+    }
+    // XXXXXXXXXXXXXXXXXXXXXXX NAV ENDS XXXXXXXXXXXXXXXXXXXXXXX
+
+    // XXXXXXXXXXXXXXXXXXXXXXX DROPDOWN STARTS XXXXXXXXXXXXXXXXXXXXXXX 
+    .dropdown{
+        display: none;
+        position: absolute;
+        padding: 15px 15px ;
+        border-radius: 5px;
+        top: 40px;
+        left: 0;
+        width: 150px;
+        background: white;
+        box-shadow: 0px 15px 107px 7px rgba(0,0,0,0.2);
+        .dd-link{
+            display: block;
+            font-family: $ubuntu;
+            font-size: .9em;
+            font-weight: 500;
+            color: #585c5f;;
+            cursor: pointer;
+            margin: 15px 0;
+            &:hover{
+                color: $headings;
+                transition: all 100ms ease-in-out;
+            }
+        }
+    } 
+    // XXXXXXXXXXXXXXXXXXXXXXX DROPDOWN ENDS XXXXXXXXXXXXXXXXXXXXXXX  
+    
+    // XXXXXXXXXXXXXXXXXXXXXXX INTRO STARTS XXXXXXXXXXXXXXXXXXXXXXX
+    .intro{
+        text-align: center;
+        h1{
+            color: white;
+            font-family: $overpass;
+            font-size: 3em;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        p{
+            font-family: $ubuntu;
+            margin-top: 0;
+        }
+        button{margin-top: 25px;}
+        .start-free{
+            background: white;
+            color: $CTA-text;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-family: $ubuntu;
+            padding: 15px 20px;
+            transition: all 200ms ease-in-out;
+            &:hover{
+                background: rgba(255, 255, 255, 0.219);
+                color: white;
+                border-color: transparent;
+            }
+        }
+        .learn-more{
+            color: white;
+            font-weight: 500;
+        }
+    }
+    // XXXXXXXXXXXXXXXXXXXXXXX INTRO ENDS XXXXXXXXXXXXXXXXXXXXXXX  
+}
+// XXXXXXXXXXXXXXXXXXXXXXX HEADER ENDS XXXXXXXXXXXXXXXXXXXXXXX  
+
+// XXXXXXXXXXXXXXXXXXXXXXX MAIN STARTS XXXXXXXXXXXXXXXXXXXXXXX 
+main{
+    
+    .about-1{
+        position: relative;
+        padding:130px $padding-desktop 240px $padding-desktop;
+        .editor{
+            position: absolute;
+            right: -200px;
+            top: 70px;
+            max-width: 680px;
+            height: auto;
+        }
+        h1{
+            text-align: center;
+            color: $headings;
+            font-family: $overpass;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+        .descp{
+            display: flex;
+            .copy{
+                flex-basis: 50%;
+                .para{
+                    h3{
+                        color: $headings;
+                        font-family: $overpass;
+                        font-weight: 600;    
+                    }
+                    p{
+                        color: hsla(203, 8%, 39%, 0.692);;
+                        font-family: $ubuntu;
+                        font-weight: 500;
+                        font-size: .8em;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+    .banner{
+        display: grid;
+        padding: 100px $padding-desktop;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        position: relative;
+        border-radius: 0 80px 0 80px ;
+        background:url(../images/bg-pattern-circles.svg) no-repeat -245px -530px ,$body-gradient;
+        .phones{
+            position: absolute;
+            top: -70px;
+            left: 60px;
+        }
+        .copy{
+            grid-column: 2;
+            h2{
+                color: white;
+                font-size: 2.2em;
+                font-weight: 400;
+                font-family: $overpass;
+            }
+            p{
+                color:rgba(255, 255, 255, 0.637);
+                font-family: $ubuntu;
+                line-height: 20px;
+                font-size: .8em;
+                font-weight: 500;
+            }
+        }
+    }
+    .about-2{
+        position: relative;
+        padding:220px $padding-desktop 240px $padding-desktop;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .laptop{
+            position: absolute;
+            left: -200px;
+            top: 70px;
+            max-width: 700px;
+            height: auto;
+        }
+        h1{
+            text-align: center;
+            color: $headings;
+            font-family: $overpass;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+        .copy{
+            grid-column: 2;
+            .para{
+                h3{
+                    color: $headings;
+                    font-family: $overpass;
+                    font-weight: 600;    
+                }
+                p{
+                    color: hsla(203, 8%, 39%, 0.692);;
+                    font-family: $ubuntu;
+                    font-weight: 500;
+                    font-size: .8em;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        
+
+
+    }
+} 
+// XXXXXXXXXXXXXXXXXXXXXXX MAIN ENDS XXXXXXXXXXXXXXXXXXXXXXX  
+
+
+// XXXXXXXXXXXXXXXXXXXXXXX FOOTER STARTS XXXXXXXXXXXXXXXXXXXXXXX 
+footer{
+    padding: 60px $padding-desktop;
+    background: $footer-background;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-radius: 0 100px 0 0 ;
+    .f-links{
+        .f-items{
+            font-family: $ubuntu;
+            font-weight: 500;
+            font-size: .8em;
+            color:$footer-text;
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .head{
+            color: rgba(255, 255, 255, 0.856);
+            margin: 20px 0;
+            cursor: unset;
+            &:hover{
+                text-decoration:none;
+            }
+        }
+    }
+}
+// XXXXXXXXXXXXXXXXXXXXXXX FOOTER ENDS XXXXXXXXXXXXXXXXXXXXXXX  
+
+
+
+
+
+
+// XXXXXXXXXXXXXXXXXXXXXXX BTN STARTS XXXXXXXXXXXXXXXXXXXXXXX
+.btn{
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-family: $ubuntu;
+    font-weight: 500;
+}
+// XXXXXXXXXXXXXXXXXXXXXXX BTN ENDS XXXXXXXXXXXXXXXXXXXXXXX  
+
+

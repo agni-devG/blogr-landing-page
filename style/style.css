@@ -1,0 +1,355 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.lighten {
+  color: #ffdad7;
+}
+
+header {
+  padding: 40px 130px 150px 130px;
+  background: url(../images/bg-pattern-intro-desktop.svg) no-repeat -250px -1075px, -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: url(../images/bg-pattern-intro-desktop.svg) no-repeat -250px -1075px, linear-gradient(90deg, #ff8f70 0%, #ff3d54 100%);
+  background-size: 200% , auto;
+  border-radius: 0 0 0 100px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+header nav .logo {
+  margin-right: 30px;
+  width: 80px;
+}
+
+header nav .nav-link {
+  position: relative;
+  margin: 10px 20px;
+}
+
+header nav .nav-link:hover .head {
+  text-decoration: underline;
+  color: white;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+header nav .nav-link:hover .head img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+header nav .nav-link:hover .dropdown {
+  display: block;
+}
+
+header nav .nav-link .head {
+  font-family: "Overpass", sans-serif;
+  padding: 15px 0;
+  font-size: .9em;
+  color: #ffdad7;
+  cursor: pointer;
+}
+
+header nav .nav-link .head img {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+header nav .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .register .log-in {
+  border-color: transparent;
+  color: #ffdad7;
+  font-weight: 500;
+}
+
+header nav .register .sign-up {
+  background: white;
+  color: #ff525d;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+header nav .register .sign-up:hover {
+  background: rgba(255, 255, 255, 0.219);
+  color: white;
+  border-color: transparent;
+}
+
+header .dropdown {
+  display: none;
+  position: absolute;
+  padding: 15px 15px;
+  border-radius: 5px;
+  top: 40px;
+  left: 0;
+  width: 150px;
+  background: white;
+  -webkit-box-shadow: 0px 15px 107px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 107px 7px rgba(0, 0, 0, 0.2);
+}
+
+header .dropdown .dd-link {
+  display: block;
+  font-family: "Ubuntu", sans-serif;
+  font-size: .9em;
+  font-weight: 500;
+  color: #585c5f;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+header .dropdown .dd-link:hover {
+  color: #1f3f5b;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+header .intro {
+  text-align: center;
+}
+
+header .intro h1 {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+header .intro p {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 0;
+}
+
+header .intro button {
+  margin-top: 25px;
+}
+
+header .intro .start-free {
+  background: white;
+  color: #ff525d;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 15px 20px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+header .intro .start-free:hover {
+  background: rgba(255, 255, 255, 0.219);
+  color: white;
+  border-color: transparent;
+}
+
+header .intro .learn-more {
+  color: white;
+  font-weight: 500;
+}
+
+main .about-1 {
+  position: relative;
+  padding: 130px 130px 240px 130px;
+}
+
+main .about-1 .editor {
+  position: absolute;
+  right: -200px;
+  top: 70px;
+  max-width: 680px;
+  height: auto;
+}
+
+main .about-1 h1 {
+  text-align: center;
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+main .about-1 .descp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .about-1 .descp .copy {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .about-1 .descp .copy .para h3 {
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
+main .about-1 .descp .copy .para p {
+  color: rgba(91, 101, 107, 0.692);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: .8em;
+  line-height: 20px;
+}
+
+main .banner {
+  display: -ms-grid;
+  display: grid;
+  padding: 100px 130px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  position: relative;
+  border-radius: 0 80px 0 80px;
+  background: url(../images/bg-pattern-circles.svg) no-repeat -245px -530px, -webkit-gradient(linear, left top, right top, from(#333341), to(#3f4164));
+  background: url(../images/bg-pattern-circles.svg) no-repeat -245px -530px, linear-gradient(90deg, #333341 0%, #3f4164 100%);
+}
+
+main .banner .phones {
+  position: absolute;
+  top: -70px;
+  left: 60px;
+}
+
+main .banner .copy {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+main .banner .copy h2 {
+  color: white;
+  font-size: 2.2em;
+  font-weight: 400;
+  font-family: "Overpass", sans-serif;
+}
+
+main .banner .copy p {
+  color: rgba(255, 255, 255, 0.637);
+  font-family: "Ubuntu", sans-serif;
+  line-height: 20px;
+  font-size: .8em;
+  font-weight: 500;
+}
+
+main .about-2 {
+  position: relative;
+  padding: 220px 130px 240px 130px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .about-2 .laptop {
+  position: absolute;
+  left: -200px;
+  top: 70px;
+  max-width: 700px;
+  height: auto;
+}
+
+main .about-2 h1 {
+  text-align: center;
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+main .about-2 .copy {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+main .about-2 .copy .para h3 {
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
+main .about-2 .copy .para p {
+  color: rgba(91, 101, 107, 0.692);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: .8em;
+  line-height: 20px;
+}
+
+footer {
+  padding: 60px 130px;
+  background: #25252d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  border-radius: 0 100px 0 0;
+}
+
+footer .f-links .f-items {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: .8em;
+  color: #c8c8cb;
+  display: block;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+footer .f-links .f-items:hover {
+  text-decoration: underline;
+}
+
+footer .f-links .head {
+  color: rgba(255, 255, 255, 0.856);
+  margin: 20px 0;
+  cursor: unset;
+}
+
+footer .f-links .head:hover {
+  text-decoration: none;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 0 10px;
+  padding: 15px 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
